@@ -5,19 +5,21 @@
     <meta name="keywords" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <title>HTML 5</title>
+    <link rel="stylesheet" href="index_html5.css">
   </head>
   <body>
-    <header>
-      <h1>Main Title</h1>
-      <nav>
-        <ul>
-          <li><a href="home.html"></a>HOME</li>
-          <li><a href="_index.html"></a>INDEX</li>
+    <div id="header">
+      <h1 class="title">Main Title</h1>
+      <nav id="list" class="main">
+        <ul class="horizontal">
+          <li ><a class="active visited" href="home.html"></a>HOME</li>
+          <li><a class="active" href="../pages/index.html"></a>INDEX</li>
+          <li><a class="visited" href="./about.html"></a>Contact</li>
         </ul>
       </nav>
-    </header>
+    </div>
     <main>
-      <section>
+      <section id="input">
         <div>First Section</div>
         <form action="" method="get" enctype="text/plain">
           <lable>Name</lable>
@@ -31,17 +33,18 @@
           <input type="email">
           <input type="file">
           <input type="radio"> 
-          <textarea name="content" rows="4" cols="50"></textarea>
+          <textarea class="text" name="content" rows="4" cols="50"></textarea>
           <select name="car">
             <option value="1">one</option>
             <option value="2">two</option>
 
           </select>
-          
+
         </form>
       </section>
       <section>
         <div>Second Section</Section></div>
+        <button id="send">Click Here</button>
       </section>
       <aside>
         <h2>Article 1</h2>
@@ -56,10 +59,12 @@
         </article>
       </aside>
     </main>
+    <p>Lorem ipsuim</p>
+    
     <footer>
       <address><a href="mailto:test@test.com">Mail me!</a></address>
       <address><a href="tel:1234">Call me!</a></address>
-      <p>&copy;MyProject 2023</p>
+      <p id="footer_paragraf">&copy;;MyProject 2023</p>
     </footer>
   </body>
 </html>
